@@ -1,4 +1,7 @@
-// this program can detects whether a string is a palindrome
+/** this program can detects whether a string is a palindrome
+ *  without reverse the string
+ */
+
 import java.util.Scanner;
 
 public class PalindromeIndex {
