@@ -20,9 +20,8 @@ public class PalindromeIndex {
 
             boolean result = true;
             int length = original.length();
-            int middle = length / 2;
 
-            for (int begin = 0; begin <= middle; begin++) {
+            for (int begin = 0; begin <= length / 2; begin++) {
 
                 if (original.charAt(begin) != original.charAt(length - begin - 1)) {
                     result = false;
