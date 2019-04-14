@@ -9,22 +9,30 @@
 
 *This program use a for loop to prints all the multiples of 3 and 5 up to 100*
 
-A variable `result` is created to store all the multiples of 3 and 5 up to 100
+An `ArrayList` library is imported. It will be used to store the multiples of 3 and 5.
 ```java
-String result = "";
+import java.util.ArrayList;
 ```
 
-A `for` loop is created to loop from number 1 to 100. The `if` statement is checking if there is any multiples of 3 and 5. If yes, add the number with a comma into `result`.
+At the end, we are going to print a list of numbers and join them with commas by using `String.join()`, but, `String.join()` only works with String on Java 8 and above. Therefore, we need to convert the data types of the numbers from `int` to `String`, and store them into the `ArrayList`.
+
+An `ArrayList` object is created to store the array of numbers.
+```java
+ArrayList<String> array = new ArrayList<>;
+```
+
+A `for` loop is created to loop from number 1 to 100. The `if` statement is checking if there is any multiples of 3 and 5. If yes, the number will be added into the `ArrayList`. The numbers are converted into String by using `String.valueOf(int)`.
 ```java
 for (int num = 1; num <= 100; num++) {
-  if (num % 3 == 0 || num % 5 == 0)
-    result = result + num + ", ";
+  if (num % 3 == 0 || num % 5 == 0) {
+    array.add(String.valueOf(num));
+  }
 }
 ```
 
-`result.replaceAll()` is used to remove the last comma.
-```java
-System.out.print(result.replaceAll(", $", ""));
+The numbers are printed by using `String.join()`.
+```Java
+System.out.print(String.join(", ", array));
 ```
 
 <a name="palindrome-index"></a>
