@@ -27,9 +27,6 @@ public class PalindromeIndex {
                     result = false;
                     break;
                 }
-                else if (original.charAt(begin) == original.charAt(middle + 1)) {
-                    result = true;
-                }
             }
 
             System.out.println(result);
