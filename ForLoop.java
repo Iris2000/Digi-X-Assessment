@@ -1,5 +1,6 @@
-/** this program use a for loop to prints
- *  all the multiples of 3 and 5 up to 100
+/* 
+this program use a for loop to prints
+all the multiples of 3 and 5 up to 100
  */
 
 public class ForLoop {
