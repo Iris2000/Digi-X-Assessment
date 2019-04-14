@@ -4,7 +4,8 @@
 * [Palindrome Index](#palindrome-index)
 * [Sorting](#sorting)
 
-## Print Number <a name="print-number"></a>
+<a name="print-number"></a>
+## Print Number 
 
 *This program use a for loop to prints all the multiples of 3 and 5 up to 100*
 
@@ -26,8 +27,8 @@ for (int num = 1; num <= 100; num++) {
 System.out.print(result.replaceAll(", $", ""));
 ```
 
-## Palindrome Index <a name="palindrome-index"></a>
-
+<a name="palindrome-index"></a>
+## Palindrome Index 
 *This program can detects whether a string is a palindrome without reverse the string.*
 
 A Scanner library is imported to get input from the user.
@@ -72,7 +73,8 @@ for (int begin = 0; begin <= length / 2; begin++) {
 
 After that, the value of `result` will be displayed and user is prompted to decide whether to repeat the program.
 
-## Sorting <a name="sorting"></a>
+<a name="sorting"></a>
+## Sorting 
 
 *This program sort an arrays in ascending order using `java.util.Arrays` library*
 
