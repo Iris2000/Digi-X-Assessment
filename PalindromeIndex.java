@@ -17,22 +17,22 @@ public class PalindromeIndex {
             System.out.print("Enter a string to check whether it is a palindrome: ");
             original = input.nextLine().toLowerCase();
 
-            int begin;
+            boolean result = true;
             int length = original.length();
             int middle = length / 2;
 
-
-            for (begin = 0; begin <= middle; begin++) {
+            for (int begin = 0; begin <= middle; begin++) {
 
                 if (original.charAt(begin) != original.charAt(length - begin - 1)) {
-                    System.out.println("false");
+                    result = false;
                     break;
                 }
                 else if (original.charAt(begin) == original.charAt(middle + 1)) {
-                    System.out.println("true");
+                    result = true;
                 }
             }
 
+            System.out.println(result);
             System.out.print("Do you want to continue[y/n]: ");
             con = input.next().toLowerCase().charAt(0);
             input.nextLine();
