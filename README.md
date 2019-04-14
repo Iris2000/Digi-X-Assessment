@@ -1,11 +1,11 @@
 # Code Explanations
 ## Table of contents
-* [Print Number](#print-number)
+* [For Loop](#for-loop)
 * [Palindrome Index](#palindrome-index)
 * [Sorting](#sorting)
 
-<a name="print-number"></a>
-## Print Number 
+<a name="for-loop"></a>
+## For Loop
 
 *This program use a for loop to prints all the multiples of 3 and 5 up to 100*
 
